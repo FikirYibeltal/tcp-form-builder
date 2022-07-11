@@ -1,8 +1,17 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const CracoLessPlugin = require('craco-less')
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 
+const CracoLessPlugin = require('craco-less')
+const path = require('path')
 // eslint-disable-next-line no-undef
 module.exports = {
+    webpack: {
+        resolve: {
+            alias: {
+                '@components': path.resolve(__dirname, 'src/components'),
+            },
+        },
+    },
     plugins: [
         {
             plugin: CracoLessPlugin,

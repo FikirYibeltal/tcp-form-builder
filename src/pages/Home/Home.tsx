@@ -1,12 +1,9 @@
 import React from 'react'
-import './App.less'
-import './App.scss'
-function App() {
+import './Home.scss'
+export const Home = () => {
     return (
         <div className='app'>
             <h1>TCP Form Builder</h1>
         </div>
     )
 }
-
-export default App
