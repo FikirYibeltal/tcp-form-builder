@@ -1,0 +1,32 @@
+.draggable-field-input {
+    position: relative;
+    background-color: white;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    .action {
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            width: 1em;
+            height: 1em;
+        }
+    }
+    .input {
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+    .make-input-draggable {
+        position: absolute;
+        left: 0;
+        height: 2rem;
+        width: 100%;
+        z-index: 1;
+        margin-top: -2rem;
+    }
+}

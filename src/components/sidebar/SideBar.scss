@@ -1,0 +1,30 @@
+.outer-sider {
+    background-color: #313e4f !important;
+    color: white !important;
+    ul,
+    ul > li {
+        background-color: #313e4f;
+        color: white;
+        border: none;
+    }
+
+    .ant-menu-item-selected,
+    .ant-menu-item-active {
+        background-color: #232d3a !important;
+        color: white !important;
+    }
+    .ant-layout-sider-trigger {
+        display: none;
+    }
+    .ant-layout-sider-children {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10rem;
+        padding: 5rem 0 5rem 0;
+    }
+    .outer-sider-break {
+        border-top: 0.7px solid white;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}

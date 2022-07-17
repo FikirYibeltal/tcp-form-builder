@@ -1,4 +1,31 @@
-.app {
+.content {
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 3.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.header-tab {
+    &.ant-tabs {
+        flex-grow: 1;
+    }
+    .ant-tabs-content {
+        height: 100%;
+    }
+    .ant-tabs-tab {
+        margin: 0 2rem 0 2rem;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #313e4f;
+        &::selection {
+            color: #313e4f;
+        }
+    }
+    .ant-tabs-ink-bar {
+        background-color: #313e4f;
+    }
+    .ant-tabs-nav {
+        margin-bottom: 0;
+    }
 }
